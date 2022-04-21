@@ -11,6 +11,7 @@ tqdm.pandas()
 
 def text_preprocess(text):
     tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
+    text = re.sub(r'\d+', '', text)
     text = text.casefold()
     text = remove_stopwords(text)
 
