@@ -44,4 +44,3 @@ if __name__ == '__main__':
             for doc in doc_sentences:
                 for sentence in doc:
                     f.write(f'{sentence}\n')
-
